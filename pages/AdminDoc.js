@@ -1,6 +1,6 @@
-import React,{useState,map,Component } from 'react';
+import React,{useState} from 'react';
 import PageHeader from '../components/PageHeader';
-import { Paper,makeStyles, TableBody, TableRow, TableCell, Toolbar, InputAdornment,Grid } from '@material-ui/core';
+import { Paper,makeStyles, TableBody, TableRow, TableCell, Toolbar,Grid } from '@material-ui/core';
 import Admin_SideMenu from '../components/sideMenu/Admin_SideMenu';
 import TestHeader from '../components/Headers/TestHeader';
 import {CssBaseline,createTheme, ThemeProvider} from '@material-ui/core' ;
@@ -16,7 +16,6 @@ import AddIcon from '@material-ui/icons/Add';
 import axios from "axios";
 import useTable from "../components/useTable";
 import ConfirmDialog from '../components/ConfirmDialog';
-import CloseIcon from '@material-ui/icons/Close';
 import DeleteOutlineOutlinedIcon from '@material-ui/icons/DeleteOutlineOutlined';
 const headCells=[
   {id:'documents', label: 'Company Documents'},

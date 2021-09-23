@@ -1,7 +1,6 @@
-import React, { Component, useState,map,useEffect } from "react";
+import React, { useState,useEffect } from "react";
 import 'semantic-ui-css/semantic.min.css';
-import { Button, Table ,Container,Icon} from 'semantic-ui-react';
-import ManuHeader from '../../components/Headers/ManuHeader';
+import { Container,Icon} from 'semantic-ui-react';
 import Brand_SideMenu from '../../components/sideMenu/Brand_SideMenu' ;
 import TestHeader from '../../components/Headers/TestHeader' ;
 import PageHeader from '../../components/PageHeader';
@@ -13,8 +12,8 @@ import BrandProfileForm from "../../components/Forms/BrandProfile/BrandProfileFo
 import Popup from '../../components/Popup';
 import Notification from "../../components/Notification";
 import ConfirmDialog from "../../components/ConfirmDialog";
-import { Paper,makeStyles, TableBody, TableRow, TableCell, Toolbar, InputAdornment } from '@material-ui/core';
-import Image from "next/image";
+import { Paper,makeStyles } from '@material-ui/core';
+
 
 const useStyles = makeStyles(theme => ({
   // root:{

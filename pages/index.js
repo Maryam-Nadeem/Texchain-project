@@ -1,19 +1,8 @@
 
 import {CssBaseline, makeStyles,createTheme, ThemeProvider} from '@material-ui/core';
-// // const mysql=require('mysql');
-// // import Route from 'react-dom';
-// import AdminPage from '../pages/Admin';
 import React,{useState} from "react";
-import Controls from '../components/controls/Controls';
-// import {makeStyles} from "@material-ui/core";
-
 import { Grid } from '@material-ui/core';
 import Signin from '../components/Forms/signin';
-
-//import {BrowserRouter as Router, Route} from "react-router-dom";
-
-
-
 
 const useStyles = makeStyles({
   appMain: {

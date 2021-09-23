@@ -23,8 +23,7 @@ import Typography from "@material-ui/core/Typography";
 import InventoryForm from "./InventoryForm";
 import Supp_SideMenu from "../../components/sideMenu/Supp_SideMenu";
 import TestHeader from "../../components/Headers/TestHeader";
-// import { ToggleContext } from "../../Contexts/ToggleContext";
-// import UsePersistedState from "../Manufacturer/UsePersistedState";
+
 
 const headCells = [
   { id: "upc", label: "Item UPC" },

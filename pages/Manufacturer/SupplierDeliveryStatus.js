@@ -1,4 +1,4 @@
-import React, { useState, map, useEffect } from "react";
+import React, { useState} from "react";
 import PageHeader from "../../components/PageHeader";
 import PeopleOutlineTwoToneIcon from "@material-ui/icons/AccountBalance";
 import { useSelector, useDispatch } from "react-redux";
@@ -9,8 +9,6 @@ import {
   TableBody,
   TableRow,
   TableCell,
-  Toolbar,
-  InputAdornment,
   Button,
 } from "@material-ui/core";
 import useTable from "../../components/useTable";
@@ -25,7 +23,6 @@ import TestHeader from '../../components/Headers/TestHeader' ;
 import CropFreeSharpIcon from '@material-ui/icons/CropFreeSharp';
 import { scanLogger } from "../../redux/Logger/Logger.actions";
 import {toggleSds} from "../../redux/sds/Sds.actions";
-// import UsePersistedState from "./UsePersistedState";
 import Box from '@material-ui/core/Box';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import { toggleLoading } from "../../redux/Logger/Logger.actions";

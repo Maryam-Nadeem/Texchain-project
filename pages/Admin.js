@@ -4,7 +4,7 @@ import Admin_SideMenu from '../components/sideMenu/Admin_SideMenu';
 import TestHeader from '../components/Headers/TestHeader';
 import 'semantic-ui-css/semantic.min.css';
 import {CssBaseline, createTheme, ThemeProvider} from '@material-ui/core' ;
-//import {abi,bytecode} from '../artifact';
+
 
 const theme = createTheme({
   palette: {

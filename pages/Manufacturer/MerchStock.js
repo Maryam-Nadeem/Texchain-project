@@ -1,7 +1,6 @@
-import React, { useState, map } from "react";
+import React, { useState} from "react";
 import PageHeader from "../../components/PageHeader";
 import PeopleOutlineTwoToneIcon from "@material-ui/icons/AccountBalance";
-import { withRouter } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
 import {
@@ -9,24 +8,20 @@ import {
   makeStyles,
   TableBody,
   TableRow,
-  TableCell,
-  Toolbar,
-  InputAdornment,
-  Button,
+  TableCell
 } from "@material-ui/core";
 import useTable from "../../components/useTable";
 import Controls from "../../components/controls/Controls";
-import { Search } from "@material-ui/icons";
+
 import axios from "axios";
-import AddIcon from "@material-ui/icons/Add";
+
 import Popup from "../../components/Popup";
-import EditOutlinedIcon from "@material-ui/icons/EditOutlined";
-import CloseIcon from "@material-ui/icons/Close";
+
+
 import Notification from "../../components/Notification";
 import ConfirmDialog from "../../components/ConfirmDialog";
-import { toggleCartHidden } from "../../redux/item/item.actions";
-import supplychain_contract from "../../components/Forms/factory";
-import Web3 from "web3";
+
+
 import Manu_SideMenu from "../../components/sideMenu/Manu_SideMenu";
 import TestHeader from "../../components/Headers/TestHeader";
 import EditIcon from '@material-ui/icons/Edit';

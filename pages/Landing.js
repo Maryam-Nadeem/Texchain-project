@@ -1,10 +1,3 @@
-// import React,{useState} from "react";
-// import Controls from '../components/controls/Controls';
-// // import {makeStyles} from "@material-ui/core";
-// import { useForm, Form } from '../components/useForm';
-// import { Grid } from '@material-ui/core';
-// import Signin from '../components/Forms/signin';
-// import Popup from '../components/Popup';
 
 import React from 'react';
 import Admin_SideMenu from '../components/sideMenu/Admin_SideMenu';

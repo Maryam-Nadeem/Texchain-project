@@ -1,4 +1,4 @@
-import React, { useState, map } from "react";
+import React, { useState} from "react";
 import TextField from "@material-ui/core/TextField";
 import {useSelector, useDispatch} from 'react-redux';
 import {
@@ -8,10 +8,10 @@ import {
   TableCell,
 } from "@material-ui/core";
 import useTable from "../../components/useTable";
-import { useForm, Form } from "../../components/useForm";
+import { useForm} from "../../components/useForm";
 import Controls from "../../components/controls/Controls";
 import axios from "axios";
-import { toggleCartHidden, togglefLAG ,toggleSET} from "../../redux/item/item.actions";
+import { toggleCartHidden} from "../../redux/item/item.actions";
 import { toggleDispatch } from "../../redux/dispatch/Dispatch.actions";
 
 const headCells = [
