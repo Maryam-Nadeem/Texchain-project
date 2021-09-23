@@ -1,9 +1,7 @@
   
 import React,{useEffect,useState} from 'react'
-import { AppBar, Toolbar, Grid, InputBase, IconButton, Badge, makeStyles,useMediaQuery,useTheme } from '@material-ui/core'
+import { AppBar, Toolbar, Grid, InputBase, IconButton,  makeStyles,useMediaQuery,useTheme } from '@material-ui/core'
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-import SuppDrawer from "../Drawer/supp_drawer";
-import Supp_SideMenu from '../sideMenu/Supp_SideMenu' ;
 import Axios from 'axios';
 import Link from 'next/link';
 import Image from "next/image";

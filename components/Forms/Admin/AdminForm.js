@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Grid, makeStyles } from "@material-ui/core";
 import Controls from "../../controls/Controls";
-import { abi, bytecode } from "../../contracts/AdminUser.json";
+import { abi } from "../../contracts/AdminUser.json";
 import { useForm, Form } from "../../useForm";
-import admin_contract from "../factory";
 import Provider from "@truffle/hdwallet-provider";
 import Web3 from "web3";
 import Axios from "axios";

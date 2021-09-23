@@ -5,7 +5,7 @@ import Manu_SideMenu from '../../components/sideMenu/Manu_SideMenu' ;
 import TestHeader from '../../components/Headers/TestHeader' ;
 import {CssBaseline, makeStyles,createTheme, ThemeProvider} from '@material-ui/core' ;
 // import SSOform from '../../components/Forms/SSOSUPPLIER/SSOform';
-// import BrandSALESORDER from '../../components/Forms/brandsalesorder/salesorder';
+// import BrandSALESORDER from '../../salesorder';
 import ScanManu from '../../components/Forms/ScanProduct/ScanManu';
 
 const theme = createTheme({

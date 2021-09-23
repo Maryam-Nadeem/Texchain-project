@@ -1,14 +1,12 @@
 import React, { useState, map } from "react";
 import PageHeader from "../../PageHeader";
 import PeopleOutlineTwoToneIcon from "@material-ui/icons/AccountBalance";
-import { withRouter } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import Provider from "@truffle/hdwallet-provider";
 import Web3 from "web3";
 import supplychain from "../../contracts/Supplychain.json";
 import Qrcode from "qrcode";
 import CropFreeSharpIcon from '@material-ui/icons/CropFreeSharp';
-import UsePersistedState from "../../../pages/Manufacturer/UsePersistedState";
 import Box from '@material-ui/core/Box';
 import LinearProgress from '@material-ui/core/LinearProgress';
 

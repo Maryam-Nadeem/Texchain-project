@@ -1,14 +1,11 @@
 import React,{useEffect, useState} from "react";
-import{withRouter} from 'react-router-dom'
 import Controls from '../controls/Controls';
 // import {makeStyles} from "@material-ui/core";
-import { useForm, Form } from '../useForm';
-import { Grid ,makeStyles,Paper} from '@material-ui/core';
+import { Form } from '../useForm';
+import { Grid ,makeStyles} from '@material-ui/core';
 import Axios from 'axios';
-import {Redirect,Link} from 'react-router-dom';
-import Main from "../../pages/Main";
 import { useHistory } from "react-router-dom";
-import CircularProgress from '@material-ui/core/CircularProgress';
+
 
 
 

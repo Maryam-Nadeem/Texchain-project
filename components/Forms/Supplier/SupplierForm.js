@@ -4,7 +4,6 @@ import Controls from '../../controls/Controls';
 import { useForm, Form } from '../../useForm';
 import Axios from 'axios';
 import supplychain from '../../contracts/Supplychain.json'
-import supplychain_contract from '../factory';
 import Provider from '@truffle/hdwallet-provider';
 import Web3 from 'web3';
 import {useSelector, useDispatch} from 'react-redux';

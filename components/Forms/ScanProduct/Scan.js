@@ -1,13 +1,10 @@
-import React, { useState, map, useContext } from "react";
+import React, { useState } from "react";
 import PageHeader from "../../PageHeader";
 import PeopleOutlineTwoToneIcon from "@material-ui/icons/AccountBalance";
-import {  Paper,makeStyles, TextField} from "@material-ui/core";
+import {  Paper,makeStyles} from "@material-ui/core";
 import Popup from "../../Popup";
 import  CustomizedTimeline from '../../Forms/Timeline/prodTimeline'
-import { useSelector,useDispatch } from "react-redux";
-// import { LoggerContext } from "../../../Contexts/LoggerContext";
-import { scanLogger } from "../../../redux/Logger/Logger.actions"
-import logger from "redux-logger";
+
 const useStyles = makeStyles(theme => ({
   toolbar:{
   padding:theme.spacing(5),

@@ -1,7 +1,6 @@
 import React from 'react'
-import { makeStyles, withStyles } from "@material-ui/core";
+import { makeStyles} from "@material-ui/core";
 import Link from 'next/link';
-import { mergeClasses } from '@material-ui/styles';
 
 // withStyles & makeStyles
 

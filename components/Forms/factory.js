@@ -1,7 +1,6 @@
 import Web3 from 'web3';
 import Provider from '@truffle/hdwallet-provider';
 const supplychain = require('../contracts/Supplychain.json');
-const admin =require('../contracts/AdminUser.json');
 
 
 const infuraKey = 'wss://rinkeby.infura.io/ws/v3/10cfdc60e2c841e4b03a5adf4abae931'

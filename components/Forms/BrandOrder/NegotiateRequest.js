@@ -1,9 +1,9 @@
-import React, { useState, map } from "react";
-import PageHeader from "../../PageHeader";
+import React, { useState } from "react";
+
 import TextField from "@material-ui/core/TextField";
 import {useSelector, useDispatch} from 'react-redux';
 
-import PeopleOutlineTwoToneIcon from "@material-ui/icons/AccountBalance";
+
 //import { connect } from 'react-redux';
 import {
   Paper,
@@ -11,8 +11,7 @@ import {
   TableBody,
   TableRow,
   TableCell,
-  Toolbar,
-  InputAdornment,
+  
   InputLabel,
   MenuItem,
   Select as MuiSelect
@@ -20,11 +19,11 @@ import {
 import useTable from "../../../components/useTable";
 import { useForm, Form } from "../../../components/useForm";
 import Controls from "../../../components/controls/Controls";
-import { Search } from "@material-ui/icons";
+
 import axios from "axios";
-import AddIcon from "@material-ui/icons/Add";
-import { getReq, toggleCartHidden, togglefLAG } from "../../../redux/item/item.actions";
-import { mergeClasses } from "@material-ui/styles";
+
+import { getReq } from "../../../redux/item/item.actions";
+
 import { toggleDodo } from "../../../redux/dodo/Dodo.actions";
 
 const headCells = [
