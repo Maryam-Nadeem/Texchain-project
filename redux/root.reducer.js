@@ -9,7 +9,7 @@ import loggerReducer from './Logger/Logger.reducer';
 import dispatchReducer from './dispatch/Dispatch.reducer';
 import dodoReducer from './dodo/Dodo.reducer';
 import sdsReducer from './sds/Sds.reducer';
-import baorderReducer from './Baorder/Baorder.reducer';
+import baorderReducer from './baorder/Baorder.reducer';
 
 const persistConfig = {
   key: 'root',
