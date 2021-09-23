@@ -23,17 +23,13 @@ import {
 } from "@material-ui/core";
 import useTable from "../../useTable";
 import Controls from "../../controls/Controls";
-import { Search } from "@material-ui/icons";
 import axios from "axios";
-import AddIcon from "@material-ui/icons/Add";
 import Popup from "../../Popup";
-import CloseIcon from "@material-ui/icons/Close";
 import Notification from "../../Notification";
 import ConfirmDialog from "../../ConfirmDialog";
-import { toggleCartHidden } from "../../../redux/item/item.actions";
 import { scanLogger,toggleLoading} from "../../../redux/Logger/Logger.actions";
-import {toggleBaorder} from "../../../redux/Baorder/baorder.actions";
-import logger from "redux-logger";
+import {toggleBaorder} from "../../../redux/baorder/Baorder.actions";
+
 const headCells = [
   { id: "upc", label: "UPC" },
   { id: "merchandizer", label: "Merchandizer" },
