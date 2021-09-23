@@ -1,7 +1,7 @@
 import { React } from 'react'
 import { createTheme } from '@material-ui/core/styles';
 
-export const theme = createTheme({
+ const theme = createTheme({
     palette: {
       primary: {
         main: "#333996",
@@ -23,6 +23,8 @@ export const theme = createTheme({
       }
     }
   })
+
+  export default theme;
 
 
   
