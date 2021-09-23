@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Grid ,makeStyles} from "@material-ui/core";
 import Controls from "../../../components/controls/Controls";
 import { useForm, Form } from "../../../components/useForm";
-import TextField from "@material-ui/core/TextField";
 import supplychain_contract from "../../../components/Forms/factory";
 import Notification from "../../../components/Notification";
 import {useSelector, useDispatch} from 'react-redux';

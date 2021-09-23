@@ -1,7 +1,6 @@
 import React, { useState, map, useEffect } from "react";
 import PageHeader from "../../components/PageHeader";
 import PeopleOutlineTwoToneIcon from "@material-ui/icons/AccountBalance";
-import { withRouter } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import Qrcode from "qrcode";
 import {
@@ -16,25 +15,16 @@ import {
 } from "@material-ui/core";
 import useTable from "../../components/useTable";
 import Controls from "../../components/controls/Controls";
-import {  Search } from "@material-ui/icons";
 import axios from "axios";
-import AddIcon from "@material-ui/icons/Add";
 import Popup from "../../components/Popup";
-import EditOutlinedIcon from "@material-ui/icons/EditOutlined";
-import CloseIcon from "@material-ui/icons/Close";
 import Notification from "../../components/Notification";
 import ConfirmDialog from "../../components/ConfirmDialog";
-import { toggleCartHidden } from "../../redux/item/item.actions";
 import supplychain_contract from "../../components/Forms/factory";
 import SideMenu from '../../components/sideMenu/Manu_SideMenu' ;
 import TestHeader from '../../components/Headers/TestHeader' ;
-import Web3 from "web3";
 import CropFreeSharpIcon from '@material-ui/icons/CropFreeSharp';
-import { LoggerContext } from "../../Contexts/LoggerContext";
-import logger from "redux-logger";
 import { scanLogger } from "../../redux/Logger/Logger.actions";
 import {toggleSds} from "../../redux/sds/Sds.actions";
-import ManuOrderDetailsForm from "./SupplierDetails/ManufacturerOrder.Details.js";
 // import UsePersistedState from "./UsePersistedState";
 import Box from '@material-ui/core/Box';
 import LinearProgress from '@material-ui/core/LinearProgress';

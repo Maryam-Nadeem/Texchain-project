@@ -8,7 +8,7 @@ import PeopleOutlineTwoToneIcon from '@material-ui/icons/AccountBalance';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
-import { useForm, Form } from "../components/useForm";
+import { Form } from "../components/useForm";
 import Controls from "../components/controls/Controls";
 import Notification from '../components/Notification';
 import Popup from '../components/Popup';

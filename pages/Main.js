@@ -2,12 +2,10 @@ import React,{useEffect,useState} from 'react';
 import axios from 'axios';
 import Admin from './Admin';
 import {useSelector, useDispatch} from 'react-redux';
-
 import Manu_inventory from './Manufacturer/Manu_inventory';
 import Supplier from './Supplier/SupplierInvenory';
 import Ordertab from './Brand/Ordertab';
 import { userLogin } from '../redux/user/user.actions';
-
 export default function Main(){
   const userlogin = useSelector((state) => state.user);
   console.log(userlogin.user_id)

@@ -2,11 +2,8 @@ import React, { Component } from "react";
 import AdminMain from '../components/Forms/Admin/AdminMain';
 import Admin_SideMenu from '../components/sideMenu/Admin_SideMenu';
 import TestHeader from '../components/Headers/TestHeader';
-import web3 from '../web3';
-import { useState } from "react";
-import Axios from "axios";
 import 'semantic-ui-css/semantic.min.css';
-import {CssBaseline, makeStyles,createTheme, ThemeProvider} from '@material-ui/core' ;
+import {CssBaseline, createTheme, ThemeProvider} from '@material-ui/core' ;
 //import {abi,bytecode} from '../artifact';
 
 const theme = createTheme({

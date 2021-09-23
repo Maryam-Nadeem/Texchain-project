@@ -1,37 +1,28 @@
-import React, { useState, map,useContext } from "react";
+import React, { useState } from "react";
 import PageHeader from "../../components/PageHeader";
 import PeopleOutlineTwoToneIcon from "@material-ui/icons/AccountBalance";
 import {useSelector, useDispatch} from 'react-redux';
 import {
-  Paper,
+
   makeStyles,
   Toolbar,
   InputAdornment,
-  Grid
+
 } from "@material-ui/core";
 import Popup from "../../components/Popup";
-import EditOutlinedIcon from "@material-ui/icons/EditOutlined";
-import CloseIcon from "@material-ui/icons/Close";
 import Notification from "../../components/Notification";
 import ConfirmDialog from "../../components/ConfirmDialog";
 import useTable from "../../components/useTable";
 import Controls from "../../components/controls/Controls";
 import { Search } from "@material-ui/icons";
 import axios from "axios";
-import AddIcon from "@material-ui/icons/Add";
-
 import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import supplychain_contract from "../../components/Forms/factory";
-import Provider from "@truffle/hdwallet-provider";
-import Web3 from "web3";
 import InventoryForm from "./InventoryForm";
 import Supp_SideMenu from "../../components/sideMenu/Supp_SideMenu";
 import TestHeader from "../../components/Headers/TestHeader";
-import { getReq, togglefLAG } from "../../redux/item/item.actions";
 // import { ToggleContext } from "../../Contexts/ToggleContext";
 // import UsePersistedState from "../Manufacturer/UsePersistedState";
 

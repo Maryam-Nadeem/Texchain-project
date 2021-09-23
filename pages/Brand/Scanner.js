@@ -4,8 +4,6 @@ import React from 'react';
 import Brand_SideMenu from '../../components/sideMenu/Brand_SideMenu' ;
 import TestHeader from '../../components/Headers/TestHeader' ;
 import {CssBaseline, makeStyles,createTheme, ThemeProvider} from '@material-ui/core' ;
-import SSOform from '../../components/Forms/SSOSUPPLIER/SSOform';
-import BrandSALESORDER from '../../components/Forms/brandsalesorder/salesorder';
 import Scan from '../../components/Forms/ScanProduct/Scan';
 
 const theme = createTheme({

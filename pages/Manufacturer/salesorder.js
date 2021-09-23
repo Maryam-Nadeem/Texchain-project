@@ -1,10 +1,8 @@
 //brand sales order with manufacturer
 import React from 'react';
-import SideMenu from '../../components/sideMenu/Manu_SideMenu' ;
 import TestHeader from '../../components/Headers/TestHeader' ;
 import {CssBaseline, makeStyles,createTheme, ThemeProvider} from '@material-ui/core' ;
 import MSOform from '../../components/Forms/MSO/MSOform'
-import { mergeClasses } from '@material-ui/styles';
 import Manu_SideMenu from '../../components/sideMenu/Manu_SideMenu';
 
 const theme = createTheme({

@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import 'semantic-ui-css/semantic.min.css';
 import SideMenu from '../../components/sideMenu/Supp_SideMenu' ;
 import TestHeader from '../../components/Headers/TestHeader' ;
-import {CssBaseline, makeStyles,createTheme, ThemeProvider} from '@material-ui/core' ;
+import {CssBaseline,createTheme, ThemeProvider} from '@material-ui/core' ;
 
 import Supplier from "../../components/Forms/Supplier/SupplierMain";
 const theme = createTheme({

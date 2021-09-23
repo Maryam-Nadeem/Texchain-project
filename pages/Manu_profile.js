@@ -1,7 +1,6 @@
 import React, { Component, useState,map,useEffect } from "react";
 import 'semantic-ui-css/semantic.min.css';
-import { Button, Table ,Container,Icon} from 'semantic-ui-react';
-import ManuHeader from '../components/Headers/ManuHeader';
+import {Container,Icon} from 'semantic-ui-react';
 import Manu_SideMenu from '../components/sideMenu/Manu_SideMenu' ;
 import TestHeader from '../components/Headers/TestHeader' ;
 import PageHeader from '../components/PageHeader';
@@ -14,7 +13,7 @@ import Popup from '../components/Popup';
 import Notification from "../components/Notification";
 import ConfirmDialog from "../components/ConfirmDialog";
 import { Paper} from '@material-ui/core';
-import useTable from "../components/useTable";
+
 
   function ManufacturerProfile(){
     axios.defaults.withCredentials=true;
@@ -23,7 +22,6 @@ import useTable from "../components/useTable";
     const [recordForEdit,setRecordForEdit]=useState(null);
     const [notify,setNotify]=useState({isOpen:false, message:'',type:''});
     const[confirmDialog,setConfirmDialog]=useState({isOpen:false,title:'',subTitle:''});
-    const [userprof,setUserprof]=useState([]);
     const [filterFn,setFilterFn]=useState({fn: items=>{return items;}});
     const [user_name,setUserName]=useState();
     const [location,setLocation]=useState();
