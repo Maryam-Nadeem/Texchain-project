@@ -31,3 +31,10 @@ Accounts passwords
 4) Brand,brand1234,brand
 5) Admin,admin1234,admin
 6) denim@gmail.com, denim1234
+
+script code
+  // "scripts": {
+  //   "dev": "next dev",
+  //   "build": "next build",
+  //   "start": "next start"
+  // },

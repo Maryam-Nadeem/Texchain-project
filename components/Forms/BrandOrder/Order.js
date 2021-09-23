@@ -79,7 +79,7 @@ export default function BrandOrder() {
   const dispatch = useDispatch()
   const classes = useStyles();
   const [search,setSeach]=useState('');
-  const disabledDodo = useSelector((state) => state.Logger);
+  const disabledDodo = useSelector((state) => state.Do);
   const [filterFn, setFilterFn] = useState({
     fn: (items) => {
       return items;

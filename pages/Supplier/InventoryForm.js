@@ -20,7 +20,7 @@ import axios from "axios";
 import AddIcon from "@material-ui/icons/Add";
 import { toggleCartHidden, togglefLAG ,toggleSET} from "../../redux/item/item.actions";
 import { ToggleContext } from "../../Contexts/ToggleContext";
-import { toggleDispatch } from "../../redux/Logger/Logger.actions";
+import { toggleDispatch } from "../../redux/dispatch/Dispatch.actions";
 
 const headCells = [
   { id: "upc", label: "UPC" },
@@ -35,7 +35,7 @@ const headCells = [
 ];
 
 export default function InventoryForm(props) {
-  const disabledlogger = useSelector(state => state.Logger)
+  const disabledDispatch = useSelector(state => state.Dis)
   const userlogin = useSelector(state => state.user)
   const dispatch = useDispatch()
   console.log(props);

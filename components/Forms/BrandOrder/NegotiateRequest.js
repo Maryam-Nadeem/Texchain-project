@@ -25,7 +25,7 @@ import axios from "axios";
 import AddIcon from "@material-ui/icons/Add";
 import { getReq, toggleCartHidden, togglefLAG } from "../../../redux/item/item.actions";
 import { mergeClasses } from "@material-ui/styles";
-import { toggleDodo } from "../../../redux/Logger/Logger.actions";
+import { toggleDodo } from "../../../redux/dodo/Dodo.actions";
 
 const headCells = [
   { id: "upc", label: "Client" },
@@ -51,7 +51,7 @@ const useStyles = makeStyles(theme => ({
 export default function NegotiateRequest(props) {
   const buttonclick = useSelector(state => state.item)
   const classes = useStyles();
-  const disabledlogger = useSelector(state => state.Logger)
+  const disabledDodo = useSelector(state => state.Do)
 
   const dispatch = useDispatch()
   const[disab,setdisabled]=useState([])
@@ -178,7 +178,7 @@ export default function NegotiateRequest(props) {
 
   return (
     <>
-     {console.log(disabledlogger.dodo)}
+     {console.log(disabledDodo.dodo)}
 
       <Paper style={{ margin: "2px", padding: "2px" }}>
 

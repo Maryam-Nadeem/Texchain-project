@@ -83,7 +83,7 @@ export default function RequestsByManufacturer() {
   // const btnFlag=useContext(ToggleContext)
   axios.defaults.withCredentials=true;
   const userlogin = useSelector((state) => state.user);
-  const disabledlogger = useSelector(state => state.Logger)
+  const disabledDispatch = useSelector(state => state.Dis)
   console.log(userlogin.user_id)
     const [suser_id,setUserId]=useState("");
     axios.defaults.withCredentials=true;
@@ -201,8 +201,8 @@ const openInPopup = (item) => {
 const addOrEdit = async ([user,req_id],disab, resetForm) => {
 
 console.log(disab)
-  setdis(disabledlogger.dispatch)
-  console.log(disabledlogger.dispatch)
+  setdis(disabledDispatch.dispatch)
+  console.log(disabledDispatch.dispatch)
   setOpenPopup(false);
   // if(user.id!=0)
   
@@ -223,9 +223,9 @@ setup(user.quantitys)
   return (
     <>
 
-      <TestHeader/>
+      
       <Supp_SideMenu/>
-
+      <TestHeader/>
       {/* <Paper style={{ margin: "2px", padding: "2px" }}> */}
       <div style={{paddingLeft: '330px',width: '100%',paddingRight: '10px'}} >
       {console.log(disabled)}
@@ -312,7 +312,7 @@ setup(user.quantitys)
               
                 // <UsePersistedState  key={idx} disabled={dis}/>
               }}
-              disabled={disabledlogger.dispatch[idx]}
+              disabled={disabledDispatch.dispatch[idx]}
             >
              {!value.inCard?'Check Inventory':'Completed'}
   

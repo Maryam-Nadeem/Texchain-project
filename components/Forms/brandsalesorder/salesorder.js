@@ -33,7 +33,8 @@ import CloseIcon from "@material-ui/icons/Close";
 import Notification from "../../Notification";
 import ConfirmDialog from "../../ConfirmDialog";
 import { toggleCartHidden } from "../../../redux/item/item.actions";
-import { scanLogger,toggleLoading,toggleSds } from "../../../redux/Logger/Logger.actions";
+import { scanLogger,toggleLoading} from "../../../redux/Logger/Logger.actions";
+import {toggleBaorder} from "../../../redux/Baorder/baorder.actions";
 import logger from "redux-logger";
 const headCells = [
   { id: "upc", label: "UPC" },
@@ -81,7 +82,7 @@ console.log(scannerLogger.SLogger)
   const classes = useStyles();
   const buttonclick = useSelector((state) => state.item);
   console.log(buttonclick);
-  const disabledSds = useSelector((state) => state.Logger);
+  const disabledBaorder = useSelector((state) => state.Order);
   const dispatch = useDispatch();
   const[disabled,setdisabled]=useState([])
 
@@ -177,7 +178,7 @@ const BRAND_contract = new web3s.eth.Contract(
 
     console.log(receipt.transactionHash);
     dispatch(toggleLoading())
-    dispatch(toggleSds(disabled))
+    dispatch(toggleBaorder(disabled))
   };
 
   const onDelete = (user_id) => {
@@ -285,7 +286,7 @@ const BRAND_contract = new web3s.eth.Contract(
                       values.inCard = true;
                       //dispatch(toggleCartHidden(item));
                     }}
-                    disabled={disabledSds.sds[idx]}
+                    disabled={disabledBaorder.baorder[idx]}
                     
                   >
                    {!values.inCard?'Accept Order':'Completed'}

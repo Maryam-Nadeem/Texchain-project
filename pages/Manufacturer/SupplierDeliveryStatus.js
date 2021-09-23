@@ -32,7 +32,8 @@ import Web3 from "web3";
 import CropFreeSharpIcon from '@material-ui/icons/CropFreeSharp';
 import { LoggerContext } from "../../Contexts/LoggerContext";
 import logger from "redux-logger";
-import { scanLogger, toggleBaorder } from "../../redux/Logger/Logger.actions";
+import { scanLogger } from "../../redux/Logger/Logger.actions";
+import {toggleSds} from "../../redux/sds/Sds.actions";
 import ManuOrderDetailsForm from "./SupplierDetails/ManufacturerOrder.Details.js";
 // import UsePersistedState from "./UsePersistedState";
 import Box from '@material-ui/core/Box';
@@ -88,7 +89,7 @@ export default function SSOform(props) {
   }
   const scannerLogger=useSelector((state)=>state.Logger)
   console.log(scannerLogger.SLogger)
-  const disabledBaorder = useSelector((state) => state.Logger);
+  const disabledSds = useSelector((state) => state.Supdev);
   const dispatch = useDispatch()
   const classes = useStyles();
   const buttonclick = useSelector((state) => state.item);
@@ -164,7 +165,7 @@ export default function SSOform(props) {
 
       console.log(receiept.transactionHash)
       dispatch(toggleLoading())
-      dispatch(toggleBaorder(disabled))
+      dispatch(toggleSds(disabled))
      
   };
   const checkstatus = async ({ item }) => {
@@ -281,7 +282,7 @@ export default function SSOform(props) {
                       values.inCard = true;
                       //dispatch(toggleCartHidden(item));
                     }}
-                    disabled={disabledBaorder.baorder[idx]}
+                    disabled={disabledSds.sds[idx]}
                     
                   >
                    {!values.inCard?'Accept Order':'Completed'}

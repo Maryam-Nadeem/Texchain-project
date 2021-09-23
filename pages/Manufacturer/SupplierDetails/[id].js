@@ -74,7 +74,7 @@ export default function SupplierDetails() {
       });
   }, []);
   const addOrEdit = async (user, resetForm) => {
-
+console.log(user)
   
       setOpenPopup(false);
       //updateuser(user.quantitys,req_id)

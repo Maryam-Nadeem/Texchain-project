@@ -2,10 +2,11 @@
   "name": "proj-next",
   "version": "0.1.0",
   "private": true,
+
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "@date-io/date-fns": "^1.3.13",
@@ -62,3 +63,5 @@
     "babel-plugin-styled-components": "^1.12.0"
   }
 }
+
+

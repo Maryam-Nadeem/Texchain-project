@@ -97,7 +97,7 @@ const classes = useStyles();
     const response = await supplychain_contract.methods
       .orderByManufacturer(values.desc)
       .call();
-    console.log(response.description);
+    console.log(response.transactionHash);
     addOrEdit(response.transactionHash,resetForm)
     console.log(response.transactionHash);
   };
